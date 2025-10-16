@@ -1,4 +1,4 @@
-# The Oracle — Multi-Domain Forecast Engine
+# The Oracle — Quant Intelligence Engine
 
 > **A quantitative intelligence platform that fuses weak signals from multiple data sources to forecast emerging technology trends**
 

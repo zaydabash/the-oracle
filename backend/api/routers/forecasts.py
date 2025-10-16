@@ -63,7 +63,7 @@ async def get_forecast_leaderboard(
 
     except Exception as e:
         logger.error(f"Error getting forecast leaderboard: {e}")
-        raise HTTPException(status_code=500, detail="Internal server error") from e from e
+        raise HTTPException(status_code=500, detail="Internal server error") from e
 
 
 @router.get("/topic/{topic_id}", response_model=TopicForecastDetail)

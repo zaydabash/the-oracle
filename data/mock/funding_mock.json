@@ -1,0 +1,122 @@
+[
+  {
+    "id": "funding:multimodal-ai-series-a",
+    "company": "TechVision AI",
+    "description": "Multimodal AI platform for enterprise applications",
+    "funding_type": "Series A",
+    "amount": 25000000,
+    "currency": "USD",
+    "announced_date": "2024-01-15T00:00:00Z",
+    "investors": ["Sequoia Capital", "Andreessen Horowitz", "GV"],
+    "url": "https://crunchbase.com/funding-round/techvision-ai-series-a",
+    "keywords": ["multimodal", "ai", "enterprise", "vision", "language"]
+  },
+  {
+    "id": "funding:autonomous-agents-seed",
+    "company": "AgentLabs",
+    "description": "Autonomous agent orchestration platform",
+    "funding_type": "Seed",
+    "amount": 8000000,
+    "currency": "USD",
+    "announced_date": "2024-01-18T00:00:00Z",
+    "investors": ["Y Combinator", "First Round Capital"],
+    "url": "https://crunchbase.com/funding-round/agentlabs-seed",
+    "keywords": ["autonomous", "agents", "orchestration", "platform"]
+  },
+  {
+    "id": "funding:openml-series-b",
+    "company": "OpenML Foundation",
+    "description": "Open-source machine learning infrastructure",
+    "funding_type": "Series B",
+    "amount": 50000000,
+    "currency": "USD",
+    "announced_date": "2024-01-20T00:00:00Z",
+    "investors": ["Kleiner Perkins", "Bessemer Venture Partners", "Index Ventures"],
+    "url": "https://crunchbase.com/funding-round/openml-series-b",
+    "keywords": ["open-source", "ml", "infrastructure", "llm"]
+  },
+  {
+    "id": "funding:quantum-ai-series-a",
+    "company": "QuantumAI Corp",
+    "description": "Quantum machine learning and optimization platform",
+    "funding_type": "Series A",
+    "amount": 18000000,
+    "currency": "USD",
+    "announced_date": "2024-01-22T00:00:00Z",
+    "investors": ["DCVC", "Intel Capital", "IBM Ventures"],
+    "url": "https://crunchbase.com/funding-round/quantumai-series-a",
+    "keywords": ["quantum", "ml", "optimization", "computing"]
+  },
+  {
+    "id": "funding:mobile-tech-seed",
+    "company": "MobileTech Solutions",
+    "description": "Edge AI optimization for mobile devices",
+    "funding_type": "Seed",
+    "amount": 6000000,
+    "currency": "USD",
+    "announced_date": "2024-01-24T00:00:00Z",
+    "investors": ["Accel Partners", "General Catalyst"],
+    "url": "https://crunchbase.com/funding-round/mobiletech-seed",
+    "keywords": ["edge", "ai", "mobile", "optimization", "tinyml"]
+  },
+  {
+    "id": "funding:automl-series-a",
+    "company": "AutoML Research",
+    "description": "Automated machine learning and neural architecture search",
+    "funding_type": "Series A",
+    "amount": 22000000,
+    "currency": "USD",
+    "announced_date": "2024-01-25T00:00:00Z",
+    "investors": ["Lightspeed Venture Partners", "NEA", "GV"],
+    "url": "https://crunchbase.com/funding-round/automl-series-a",
+    "keywords": ["automl", "neural", "architecture", "search"]
+  },
+  {
+    "id": "funding:privacy-ai-seed",
+    "company": "PrivacyAI Inc",
+    "description": "Federated learning with privacy guarantees",
+    "funding_type": "Seed",
+    "amount": 4500000,
+    "currency": "USD",
+    "announced_date": "2024-01-26T00:00:00Z",
+    "investors": ["Founders Fund", "8VC"],
+    "url": "https://crunchbase.com/funding-round/privacy-ai-seed",
+    "keywords": ["privacy", "federated", "learning", "differential"]
+  },
+  {
+    "id": "funding:causal-ai-series-a",
+    "company": "CausalAI Labs",
+    "description": "Causal inference and discovery platform",
+    "funding_type": "Series A",
+    "amount": 15000000,
+    "currency": "USD",
+    "announced_date": "2024-01-28T00:00:00Z",
+    "investors": ["Matrix Partners", "Benchmark"],
+    "url": "https://crunchbase.com/funding-round/causal-ai-series-a",
+    "keywords": ["causal", "inference", "discovery", "statistics"]
+  },
+  {
+    "id": "funding:robotics-ai-series-b",
+    "company": "RoboticsAI Systems",
+    "description": "Robotic manipulation and control systems",
+    "funding_type": "Series B",
+    "amount": 35000000,
+    "currency": "USD",
+    "announced_date": "2024-01-30T00:00:00Z",
+    "investors": ["Andreessen Horowitz", "Khosla Ventures", "Playground Global"],
+    "url": "https://crunchbase.com/funding-round/robotics-ai-series-b",
+    "keywords": ["robotics", "manipulation", "control", "imitation"]
+  },
+  {
+    "id": "funding:generative-ai-series-a",
+    "company": "GenerativeAI Co",
+    "description": "Synthetic data generation platform",
+    "funding_type": "Series A",
+    "amount": 20000000,
+    "currency": "USD",
+    "announced_date": "2024-02-01T00:00:00Z",
+    "investors": ["Sequoia Capital", "General Catalyst", "Bessemer"],
+    "url": "https://crunchbase.com/funding-round/generative-ai-series-a",
+    "keywords": ["synthetic", "data", "generation", "gans", "vaes"]
+  }
+]

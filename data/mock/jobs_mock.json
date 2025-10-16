@@ -1,0 +1,112 @@
+[
+  {
+    "id": "job:multimodal-ai-engineer-001",
+    "title": "Senior Multimodal AI Engineer",
+    "company": "TechVision AI",
+    "location": "San Francisco, CA (Remote)",
+    "description": "We're looking for a Senior AI Engineer to work on multimodal retrieval agents and vision-language models. Experience with transformer architectures and cross-modal learning required.",
+    "url": "https://weworkremotely.com/remote-jobs/001-senior-multimodal-ai-engineer",
+    "published": "2024-01-20T00:00:00Z",
+    "salary": "$180,000 - $250,000",
+    "keywords": ["multimodal", "ai", "vision", "language", "retrieval", "agents"]
+  },
+  {
+    "id": "job:autonomous-agent-developer-002",
+    "title": "Autonomous Agent Developer",
+    "company": "AgentLabs",
+    "location": "New York, NY",
+    "description": "Join our team building autonomous AI agents with toolformer integration. Strong background in agent orchestration and function calling frameworks.",
+    "url": "https://weworkremotely.com/remote-jobs/002-autonomous-agent-developer",
+    "published": "2024-01-21T00:00:00Z",
+    "salary": "$160,000 - $220,000",
+    "keywords": ["autonomous", "agents", "toolformer", "orchestration", "ai"]
+  },
+  {
+    "id": "job:open-source-llm-researcher-003",
+    "title": "Open Source LLM Researcher",
+    "company": "OpenML Foundation",
+    "location": "Remote",
+    "description": "Research and develop open-weight large language models. Experience with distributed training and model optimization required.",
+    "url": "https://weworkremotely.com/remote-jobs/003-open-source-llm-researcher",
+    "published": "2024-01-22T00:00:00Z",
+    "salary": "$200,000 - $280,000",
+    "keywords": ["llm", "open-source", "distributed", "training", "research"]
+  },
+  {
+    "id": "job:quantum-ml-scientist-004",
+    "title": "Quantum Machine Learning Scientist",
+    "company": "QuantumAI Corp",
+    "location": "Austin, TX",
+    "description": "Lead quantum machine learning research with variational algorithms and quantum optimization. PhD in quantum computing or related field preferred.",
+    "url": "https://weworkremotely.com/remote-jobs/004-quantum-ml-scientist",
+    "published": "2024-01-23T00:00:00Z",
+    "salary": "$180,000 - $260,000",
+    "keywords": ["quantum", "machine-learning", "variational", "algorithms", "optimization"]
+  },
+  {
+    "id": "job:edge-ai-engineer-005",
+    "title": "Edge AI Engineer",
+    "company": "MobileTech Solutions",
+    "location": "Seattle, WA",
+    "description": "Optimize AI models for mobile and IoT devices. Experience with model compression, quantization, and edge deployment required.",
+    "url": "https://weworkremotely.com/remote-jobs/005-edge-ai-engineer",
+    "published": "2024-01-24T00:00:00Z",
+    "salary": "$140,000 - $200,000",
+    "keywords": ["edge", "ai", "mobile", "iot", "compression", "quantization"]
+  },
+  {
+    "id": "job:neural-architecture-researcher-006",
+    "title": "Neural Architecture Research Scientist",
+    "company": "AutoML Research",
+    "location": "Palo Alto, CA",
+    "description": "Research neural architecture search and automated machine learning. Strong background in evolutionary algorithms and neural network design.",
+    "url": "https://weworkremotely.com/remote-jobs/006-neural-architecture-researcher",
+    "published": "2024-01-25T00:00:00Z",
+    "salary": "$190,000 - $270,000",
+    "keywords": ["neural", "architecture", "search", "automl", "evolutionary", "algorithms"]
+  },
+  {
+    "id": "job:federated-learning-engineer-007",
+    "title": "Federated Learning Engineer",
+    "company": "PrivacyAI Inc",
+    "location": "Boston, MA",
+    "description": "Develop federated learning systems with differential privacy. Experience with distributed systems and privacy-preserving ML required.",
+    "url": "https://weworkremotely.com/remote-jobs/007-federated-learning-engineer",
+    "published": "2024-01-26T00:00:00Z",
+    "salary": "$170,000 - $230,000",
+    "keywords": ["federated", "learning", "privacy", "differential", "distributed"]
+  },
+  {
+    "id": "job:causal-inference-scientist-008",
+    "title": "Causal Inference Scientist",
+    "company": "CausalAI Labs",
+    "location": "Remote",
+    "description": "Research causal discovery and inference methods for high-dimensional data. Strong statistical background and experience with causal modeling required.",
+    "url": "https://weworkremotely.com/remote-jobs/008-causal-inference-scientist",
+    "published": "2024-01-27T00:00:00Z",
+    "salary": "$175,000 - $240,000",
+    "keywords": ["causal", "inference", "discovery", "statistics", "modeling"]
+  },
+  {
+    "id": "job:robotics-manipulation-engineer-009",
+    "title": "Robotics Manipulation Engineer",
+    "company": "RoboticsAI Systems",
+    "location": "Pittsburgh, PA",
+    "description": "Develop robotic manipulation systems using imitation learning. Experience with robotic control and computer vision required.",
+    "url": "https://weworkremotely.com/remote-jobs/009-robotics-manipulation-engineer",
+    "published": "2024-01-28T00:00:00Z",
+    "salary": "$150,000 - $210,000",
+    "keywords": ["robotics", "manipulation", "imitation", "learning", "control"]
+  },
+  {
+    "id": "job:synthetic-data-scientist-010",
+    "title": "Synthetic Data Scientist",
+    "company": "GenerativeAI Co",
+    "location": "London, UK (Remote)",
+    "description": "Create high-quality synthetic datasets using generative models. Experience with GANs, VAEs, and data augmentation techniques required.",
+    "url": "https://weworkremotely.com/remote-jobs/010-synthetic-data-scientist",
+    "published": "2024-01-29T00:00:00Z",
+    "salary": "$160,000 - $220,000",
+    "keywords": ["synthetic", "data", "generative", "models", "gans", "vaes"]
+  }
+]

@@ -1,0 +1,284 @@
+{
+  "topics": [
+    {
+      "id": "multimodal-agents",
+      "name": "Multimodal Retrieval Agents",
+      "keywords": [
+        "multimodal retrieval",
+        "multimodal agents",
+        "vision language models",
+        "visual question answering",
+        "image text retrieval",
+        "cross-modal retrieval",
+        "multimodal search",
+        "visual grounding"
+      ]
+    },
+    {
+      "id": "autonomous-agents",
+      "name": "Autonomous AI Agents",
+      "keywords": [
+        "autonomous agents",
+        "ai agents",
+        "agent orchestration",
+        "multi-agent systems",
+        "agent frameworks",
+        "toolformer",
+        "function calling",
+        "agent workflows"
+      ]
+    },
+    {
+      "id": "open-weight-llms",
+      "name": "Open-Weight Large Language Models",
+      "keywords": [
+        "open weight",
+        "open source llm",
+        "llama",
+        "mistral",
+        "openllm",
+        "hugging face models",
+        "distributed training",
+        "model weights"
+      ]
+    },
+    {
+      "id": "quantum-computing",
+      "name": "Quantum Computing Applications",
+      "keywords": [
+        "quantum computing",
+        "quantum algorithms",
+        "quantum machine learning",
+        "quantum optimization",
+        "quantum simulation",
+        "quantum cryptography",
+        "quantum annealing",
+        "quantum supremacy"
+      ]
+    },
+    {
+      "id": "edge-ai",
+      "name": "Edge AI and TinyML",
+      "keywords": [
+        "edge ai",
+        "tinyml",
+        "mobile ai",
+        "embedded ai",
+        "iot ai",
+        "edge computing",
+        "model compression",
+        "quantization"
+      ]
+    },
+    {
+      "id": "neural-architecture",
+      "name": "Neural Architecture Search",
+      "keywords": [
+        "neural architecture search",
+        "nas",
+        "automl",
+        "architecture optimization",
+        "model search",
+        "hyperparameter optimization",
+        "neural networks design",
+        "automated ml"
+      ]
+    },
+    {
+      "id": "federated-learning",
+      "name": "Federated Learning",
+      "keywords": [
+        "federated learning",
+        "distributed learning",
+        "privacy preserving ml",
+        "federated optimization",
+        "differential privacy",
+        "secure aggregation",
+        "cross-silo learning",
+        "federated analytics"
+      ]
+    },
+    {
+      "id": "causal-inference",
+      "name": "Causal Inference and Discovery",
+      "keywords": [
+        "causal inference",
+        "causal discovery",
+        "causal ml",
+        "counterfactual reasoning",
+        "causal graphs",
+        "treatment effects",
+        "causal relationships",
+        "causal models"
+      ]
+    },
+    {
+      "id": "robotics-manipulation",
+      "name": "Robotic Manipulation and Control",
+      "keywords": [
+        "robotic manipulation",
+        "robot control",
+        "manipulation learning",
+        "robotic grasping",
+        "robot learning",
+        "manipulation planning",
+        "robotic assembly",
+        "dexterous manipulation"
+      ]
+    },
+    {
+      "id": "synthetic-data",
+      "name": "Synthetic Data Generation",
+      "keywords": [
+        "synthetic data",
+        "data generation",
+        "generative models",
+        "data augmentation",
+        "simulated data",
+        "artificial data",
+        "data synthesis",
+        "generative ai"
+      ]
+    },
+    {
+      "id": "neural-rendering",
+      "name": "Neural Rendering and 3D",
+      "keywords": [
+        "neural rendering",
+        "neural radiance fields",
+        "nerf",
+        "3d reconstruction",
+        "neural 3d",
+        "volume rendering",
+        "implicit representations",
+        "novel view synthesis"
+      ]
+    },
+    {
+      "id": "memory-networks",
+      "name": "Memory-Augmented Neural Networks",
+      "keywords": [
+        "memory networks",
+        "external memory",
+        "neural turing machines",
+        "memory augmented",
+        "episodic memory",
+        "working memory",
+        "memory mechanisms",
+        "persistent memory"
+      ]
+    },
+    {
+      "id": "graph-neural-nets",
+      "name": "Graph Neural Networks",
+      "keywords": [
+        "graph neural networks",
+        "gnn",
+        "graph convolution",
+        "graph attention",
+        "graph learning",
+        "graph embeddings",
+        "network analysis",
+        "relational learning"
+      ]
+    },
+    {
+      "id": "adversarial-robustness",
+      "name": "Adversarial Robustness",
+      "keywords": [
+        "adversarial robustness",
+        "adversarial training",
+        "robust ml",
+        "adversarial examples",
+        "defense mechanisms",
+        "attack resistance",
+        "certified robustness",
+        "adversarial defense"
+      ]
+    },
+    {
+      "id": "continual-learning",
+      "name": "Continual and Lifelong Learning",
+      "keywords": [
+        "continual learning",
+        "lifelong learning",
+        "catastrophic forgetting",
+        "incremental learning",
+        "online learning",
+        "knowledge retention",
+        "learning to learn",
+        "meta learning"
+      ]
+    },
+    {
+      "id": "explainable-ai",
+      "name": "Explainable AI and Interpretability",
+      "keywords": [
+        "explainable ai",
+        "interpretable ml",
+        "model interpretability",
+        "attention visualization",
+        "feature importance",
+        "saliency maps",
+        "model explanation",
+        "transparent ai"
+      ]
+    },
+    {
+      "id": "neural-symbolic",
+      "name": "Neural-Symbolic Integration",
+      "keywords": [
+        "neural symbolic",
+        "symbolic reasoning",
+        "knowledge graphs",
+        "logical reasoning",
+        "neural theorem proving",
+        "symbolic learning",
+        "hybrid models",
+        "neuro symbolic ai"
+      ]
+    },
+    {
+      "id": "few-shot-learning",
+      "name": "Few-Shot and Meta Learning",
+      "keywords": [
+        "few shot learning",
+        "meta learning",
+        "learning to learn",
+        "prototypical networks",
+        "maml",
+        "model agnostic",
+        "rapid adaptation",
+        "low resource learning"
+      ]
+    },
+    {
+      "id": "self-supervised",
+      "name": "Self-Supervised Learning",
+      "keywords": [
+        "self supervised learning",
+        "unsupervised representation",
+        "contrastive learning",
+        "pretext tasks",
+        "self supervision",
+        "representation learning",
+        "ssl",
+        "unsupervised pretraining"
+      ]
+    },
+    {
+      "id": "neural-compression",
+      "name": "Neural Data Compression",
+      "keywords": [
+        "neural compression",
+        "learned compression",
+        "neural codecs",
+        "end to end compression",
+        "compression learning",
+        "neural image compression",
+        "video compression",
+        "audio compression"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "arxiv:2401.00001",
+    "title": "Multimodal Retrieval Agents for Complex Query Understanding",
+    "authors": ["Jane Smith", "John Doe"],
+    "abstract": "We present a novel approach to multimodal retrieval that combines vision and language understanding for complex query processing...",
+    "categories": ["cs.AI", "cs.CL"],
+    "published": "2024-01-15T00:00:00Z",
+    "updated": "2024-01-15T00:00:00Z",
+    "primary_category": "cs.AI"
+  },
+  {
+    "id": "arxiv:2401.00002", 
+    "title": "Autonomous Agent Orchestration with Toolformer Integration",
+    "authors": ["Alice Johnson", "Bob Wilson"],
+    "abstract": "This paper introduces a new framework for autonomous agent coordination using toolformer-based function calling...",
+    "categories": ["cs.AI", "cs.LG"],
+    "published": "2024-01-16T00:00:00Z",
+    "updated": "2024-01-16T00:00:00Z",
+    "primary_category": "cs.AI"
+  },
+  {
+    "id": "arxiv:2401.00003",
+    "title": "Open-Weight Language Models: Training and Deployment Strategies",
+    "authors": ["Carol Davis", "David Brown"],
+    "abstract": "We explore efficient methods for training and deploying open-weight large language models in distributed environments...",
+    "categories": ["cs.LG", "cs.CL"],
+    "published": "2024-01-17T00:00:00Z",
+    "updated": "2024-01-17T00:00:00Z",
+    "primary_category": "cs.LG"
+  },
+  {
+    "id": "arxiv:2401.00004",
+    "title": "Quantum Machine Learning for Optimization Problems",
+    "authors": ["Eve Miller", "Frank Garcia"],
+    "abstract": "This work demonstrates quantum advantage in solving complex optimization problems using variational quantum algorithms...",
+    "categories": ["quant-ph", "cs.LG"],
+    "published": "2024-01-18T00:00:00Z",
+    "updated": "2024-01-18T00:00:00Z",
+    "primary_category": "quant-ph"
+  },
+  {
+    "id": "arxiv:2401.00005",
+    "title": "Edge AI Optimization for Mobile Devices",
+    "authors": ["Grace Lee", "Henry Chen"],
+    "abstract": "We present novel techniques for deploying AI models on resource-constrained mobile and IoT devices...",
+    "categories": ["cs.LG", "cs.DC"],
+    "published": "2024-01-19T00:00:00Z",
+    "updated": "2024-01-19T00:00:00Z",
+    "primary_category": "cs.LG"
+  },
+  {
+    "id": "arxiv:2401.00006",
+    "title": "Neural Architecture Search with Evolutionary Algorithms",
+    "authors": ["Ivy Zhang", "Jack Wang"],
+    "abstract": "This paper introduces an evolutionary approach to neural architecture search for optimal model design...",
+    "categories": ["cs.LG", "cs.NE"],
+    "published": "2024-01-20T00:00:00Z",
+    "updated": "2024-01-20T00:00:00Z",
+    "primary_category": "cs.LG"
+  },
+  {
+    "id": "arxiv:2401.00007",
+    "title": "Federated Learning with Differential Privacy Guarantees",
+    "authors": ["Kate Anderson", "Leo Rodriguez"],
+    "abstract": "We propose a new framework for federated learning that provides strong differential privacy guarantees...",
+    "categories": ["cs.LG", "cs.CR"],
+    "published": "2024-01-21T00:00:00Z",
+    "updated": "2024-01-21T00:00:00Z",
+    "primary_category": "cs.LG"
+  },
+  {
+    "id": "arxiv:2401.00008",
+    "title": "Causal Discovery in High-Dimensional Systems",
+    "authors": ["Mary Thompson", "Nick Patel"],
+    "abstract": "This work presents scalable methods for causal discovery in high-dimensional observational data...",
+    "categories": ["stat.ML", "cs.LG"],
+    "published": "2024-01-22T00:00:00Z",
+    "updated": "2024-01-22T00:00:00Z",
+    "primary_category": "stat.ML"
+  },
+  {
+    "id": "arxiv:2401.00009",
+    "title": "Robotic Manipulation Learning with Imitation",
+    "authors": ["Olivia White", "Paul Kumar"],
+    "abstract": "We demonstrate improved robotic manipulation through imitation learning with human demonstrations...",
+    "categories": ["cs.RO", "cs.LG"],
+    "published": "2024-01-23T00:00:00Z",
+    "updated": "2024-01-23T00:00:00Z",
+    "primary_category": "cs.RO"
+  },
+  {
+    "id": "arxiv:2401.00010",
+    "title": "Generative Models for Synthetic Data Creation",
+    "authors": ["Quinn Lewis", "Rachel Green"],
+    "abstract": "This paper explores generative models for creating high-quality synthetic datasets for training...",
+    "categories": ["cs.LG", "cs.CV"],
+    "published": "2024-01-24T00:00:00Z",
+    "updated": "2024-01-24T00:00:00Z",
+    "primary_category": "cs.LG"
+  }
+]

@@ -1,0 +1,33 @@
+# Core Framework
+fastapi>=0.109.1
+uvicorn[standard]>=0.24.0
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# Database
+sqlmodel>=0.0.14
+alembic>=1.13.0
+psycopg2-binary>=2.9.9
+
+# Data Processing
+pandas>=2.1.0
+numpy>=1.24.0
+scikit-learn>=1.5.0
+statsmodels>=0.14.0
+
+# HTTP & API
+requests>=2.32.4
+httpx>=0.25.0
+python-multipart>=0.0.18
+python-jose[cryptography]>=3.4.0
+
+# Utilities
+python-dotenv>=1.0.0
+typer>=0.9.0
+rich>=13.7.0
+
+# Development
+black>=24.3.0
+ruff>=0.1.0
+pytest>=7.4.0
+pytest-cov>=4.1.0

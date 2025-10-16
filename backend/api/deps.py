@@ -1,8 +1,7 @@
 """API dependencies for The Oracle."""
 
-from typing import Generator
+from collections.abc import Generator
 
-from fastapi import Depends
 from sqlalchemy.orm import Session
 
 from ..db.session import get_db

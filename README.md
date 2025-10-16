@@ -38,6 +38,16 @@ make up && make seed
 # API docs at http://localhost:8000/docs
 ```
 
+### Demo Script
+
+**60-second presentation script:**
+
+1. **Leaderboard** (15s): "The Oracle ranks 20+ topics by surge probability using explainable scoring. Hover shows the breakdown: velocity growth, z-spike, convergence, and uncertainty penalty."
+
+2. **Topic Detail** (30s): "Click any topic to see observed vs 30-day forecast with confidence bands. Right panel shows contributing signals from arXiv, GitHub, jobs, and funding sources."
+
+3. **Narrative & Export** (15s): "Each topic gets auto-generated narratives with citations. Hit 'Copy digest' or run the export script for share-ready summaries."
+
 ### Demo Screenshots & GIFs
 
 To create demo assets for presentations:

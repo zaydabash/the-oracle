@@ -2,7 +2,6 @@
 
 import logging
 import sys
-from typing import Any, Dict
 
 import structlog
 from rich.console import Console
@@ -13,7 +12,7 @@ from .config import settings
 
 def setup_logging() -> None:
     """Configure application logging."""
-    
+
     # Configure structlog
     structlog.configure(
         processors=[
@@ -25,7 +24,7 @@ def setup_logging() -> None:
             structlog.processors.StackInfoRenderer(),
             structlog.processors.format_exc_info,
             structlog.processors.UnicodeDecoder(),
-            structlog.processors.JSONRenderer() if settings.log_format == "json" 
+            structlog.processors.JSONRenderer() if settings.log_format == "json"
             else structlog.dev.ConsoleRenderer(colors=True),
         ],
         context_class=dict,
@@ -33,7 +32,7 @@ def setup_logging() -> None:
         wrapper_class=structlog.stdlib.BoundLogger,
         cache_logger_on_first_use=True,
     )
-    
+
     # Configure standard library logging
     logging.basicConfig(
         level=getattr(logging, settings.log_level.upper()),
@@ -48,7 +47,7 @@ def setup_logging() -> None:
             ) if settings.log_format != "json" else logging.StreamHandler(sys.stdout)
         ],
     )
-    
+
     # Set log levels for noisy libraries
     logging.getLogger("httpx").setLevel(logging.WARNING)
     logging.getLogger("httpcore").setLevel(logging.WARNING)

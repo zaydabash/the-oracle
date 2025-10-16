@@ -1,9 +1,9 @@
 """Signal event model for The Oracle."""
 
 from datetime import datetime
-from typing import Dict, Literal, Optional
+from typing import Literal
 
-from sqlalchemy import Column, DateTime, Float, ForeignKey, JSON, String, Text
+from sqlalchemy import JSON, Column, DateTime, Float, ForeignKey, String, Text
 from sqlalchemy.orm import relationship
 
 from ..db.base import Base
@@ -13,9 +13,9 @@ SourceType = Literal["arxiv", "github", "jobs", "funding"]
 
 class SignalEvent(Base):
     """Signal event model representing individual data points from external sources."""
-    
+
     __tablename__ = "signal_events"
-    
+
     id = Column(String(255), primary_key=True, index=True)
     source = Column(String(50), nullable=False, index=True)
     source_id = Column(String(255), nullable=False)
@@ -27,13 +27,13 @@ class SignalEvent(Base):
     magnitude = Column(Float, nullable=False, default=1.0)
     metadata = Column(JSON, nullable=True, default=dict)
     created_at = Column(DateTime, default=datetime.utcnow, nullable=False)
-    
+
     # Relationships
     topic = relationship("Topic", back_populates="signal_events")
-    
+
     def __repr__(self) -> str:
         return f"<SignalEvent(id='{self.id}', source='{self.source}', topic_id='{self.topic_id}')>"
-    
+
     def to_dict(self) -> dict:
         """Convert to dictionary."""
         return {

@@ -1,17 +1,16 @@
 """Main FastAPI application for The Oracle."""
 
+from collections.abc import AsyncGenerator
 from contextlib import asynccontextmanager
-from typing import AsyncGenerator
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
+from .api.routers import forecasts, health, signals, topics
 from .core.config import settings
-from .core.logging import setup_logging, logger
-from .db.base import engine
-from .db.base import Base
-from .api.routers import health, topics, signals, forecasts
+from .core.logging import logger, setup_logging
+from .db.base import Base, engine
 
 
 @asynccontextmanager
@@ -20,16 +19,16 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     # Startup
     setup_logging()
     logger.info("Starting The Oracle application")
-    
+
     # Create database tables
     try:
         Base.metadata.create_all(bind=engine)
         logger.info("Database tables created/verified")
     except Exception as e:
         logger.error(f"Error creating database tables: {e}")
-    
+
     yield
-    
+
     # Shutdown
     logger.info("Shutting down The Oracle application")
 
@@ -89,7 +88,7 @@ async def global_exception_handler(request, exc):
 
 if __name__ == "__main__":
     import uvicorn
-    
+
     uvicorn.run(
         "app:app",
         host=settings.api_host,

@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Deterministic seed script for The Oracle with rich mock data."""
 
-import os, json, random, datetime as dt
-from pathlib import Path
+import datetime as dt
+import json
+import random
 import sqlite3
+from pathlib import Path
 
 random.seed(42)
 
@@ -36,7 +38,7 @@ def reset_db(c):
 
 def ensure_topics(c, conn):
     for t in TOPICS["topics"][:20]:  # take 20; we need ≥12
-        c.execute("INSERT OR IGNORE INTO topics (id, name, keywords) VALUES (?, ?, ?)", 
+        c.execute("INSERT OR IGNORE INTO topics (id, name, keywords) VALUES (?, ?, ?)",
                  (t["id"], t["name"], json.dumps(t["keywords"])))
     conn.commit()
 
@@ -74,7 +76,7 @@ def build_features(c, conn):
             acceleration = 0.01 + random.gauss(0, 0.005)
             convergence = 0.5 + 0.005 * ((d-START).days) + random.gauss(0, 0.05)
             mention_count = int(10 + 0.1 * ((d-START).days) + random.gauss(0, 3))
-            
+
             c.execute("""
             INSERT OR REPLACE INTO topic_features 
             (id, topic_id, date, velocity, acceleration, convergence, mention_count)
@@ -97,18 +99,18 @@ def build_forecasts(c, conn):
                 "yhat_lower": base_value - 0.3,
                 "yhat_upper": base_value + 0.3
             })
-        
+
         # Calculate surge score components
         pct_increase_30d = random.uniform(0.1, 0.3)  # 10-30% growth
         z_spike_recent = random.uniform(0.5, 2.0)    # Recent spike
         convergence_30d = random.uniform(0.6, 1.0)   # Cross-source convergence
         uncertainty_width_norm = random.uniform(0.1, 0.3)  # Uncertainty
-        
+
         # Surge score calculation (0-100%)
         w1, w2, w3, w4 = 0.9, 0.5, 0.4, 0.6
         raw = (w1 * pct_increase_30d + w2 * z_spike_recent + w3 * convergence_30d - w4 * uncertainty_width_norm)
         surge_score_pct = round(100 * (1.0 / (1.0 + (2.71828 ** -raw))), 1)
-        
+
         c.execute("""
         INSERT INTO topic_forecasts 
         (id, topic_id, horizon_days, model_type, growth_rate, confidence, forecast_curve, surge_score)
@@ -138,6 +140,6 @@ if __name__ == "__main__":
         ensure_topics(cur, con)
         seed_events(cur, con)
         build_features_and_forecasts(cur, con)
-    
+
     print("Seed complete: >=12 topics, 120 days of events.")
     print("Visit http://localhost:5173 for the dashboard")

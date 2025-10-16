@@ -1,14 +1,13 @@
 """Test configuration and fixtures."""
 
+
 import pytest
-import tempfile
-from pathlib import Path
+from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from fastapi.testclient import TestClient
 
-from ..db.base import Base
 from ..app import app
+from ..db.base import Base
 
 
 @pytest.fixture(scope="session")
@@ -39,7 +38,7 @@ def client(test_db):
             yield test_db
         finally:
             pass
-    
+
     app.dependency_overrides[get_db] = override_get_db
     client = TestClient(app)
     yield client

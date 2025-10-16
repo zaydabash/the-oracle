@@ -82,12 +82,12 @@ make etl && make features && make forecast
 
 ```mermaid
 flowchart LR
-A[Ingestion: arXiv/GitHub/Jobs/Funding] --> B[Normalize SignalEvents]
-B --> C[Feature Builder: velocity/accel/z-spike/convergence]
-C --> D[Forecast: ARIMA/Prophet]
-D --> E[Ranker: surge_score_pct + breakdown]
-E --> F[API /topics, /topics/{id}]
-F --> G[Dashboard: Leaderboard + Topic Detail]
+A["Ingestion: arXiv/GitHub/Jobs/Funding"] --> B["Normalize SignalEvents"]
+B --> C["Feature Builder: velocity/accel/z-spike/convergence"]
+C --> D["Forecast: ARIMA/Prophet"]
+D --> E["Ranker: surge_score_pct + breakdown"]
+E --> F["API /topics /topics/id"]
+F --> G["Dashboard: Leaderboard + Topic Detail"]
 ```
 
 ## Data Model

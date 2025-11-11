@@ -31,21 +31,33 @@ rebuild: ## Run full pipeline: etl -> features -> forecast
 	docker-compose exec backend python -c "from ingestion.etl_runner import main; from features.build_feature_matrix import main as build_features; from forecasting.baseline import main as forecast; main(); build_features(); forecast()"
 
 test: ## Run all tests
-	docker-compose exec backend python -m pytest tests/ -v
+	python3 -m pytest backend/tests/ -v
 
-test-coverage: ## Run tests with coverage report
-	docker-compose exec backend python -m pytest tests/ --cov=. --cov-report=term-missing
+test-coverage: ## Run tests with coverage report (target: 95%+)
+	python3 -m pytest backend/tests/ --cov=backend --cov-report=html --cov-report=term-missing --cov-report=term
 
-lint: ## Run linting checks
-	docker-compose exec backend ruff check .
-	docker-compose exec backend black --check .
+test-security: ## Run security tests
+	python3 -m pytest backend/tests/test_security.py -v
+
+lint: ## Run linting checks (ruff, flake8, pylint)
+	python3 -m ruff check backend/
+	python3 -m ruff check simple_api.py simple_seed.py
+	python3 -m black --check backend/ simple_api.py simple_seed.py
+	@echo "Running flake8..."
+	@python3 -m flake8 backend/ --config=setup.cfg || echo "flake8 not installed, skipping"
+	@echo "Running pylint..."
+	@python3 -m pylint backend/ --rcfile=setup.cfg || echo "pylint not installed, skipping"
+
+lint-fix: ## Auto-fix linting issues
+	python3 -m ruff check --fix backend/
+	python3 -m ruff check --fix simple_api.py simple_seed.py
+	python3 -m black backend/ simple_api.py simple_seed.py
 
 type-check: ## Run type checking
-	docker-compose exec backend mypy .
+	python3 -m mypy backend/ --config-file=pyproject.toml
 
-fmt: ## Format code
-	docker-compose exec backend ruff check --fix .
-	docker-compose exec backend black .
+fmt: ## Format code (alias for lint-fix)
+	$(MAKE) lint-fix
 
 clean: ## Clean up containers and volumes
 	docker-compose down -v

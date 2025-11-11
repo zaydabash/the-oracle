@@ -74,6 +74,14 @@ api.log
 .env.test.local
 .env.production.local
 
+# Secrets
+/secrets/
+*.key
+*.pem
+*.cert
+*.secret
+credentials.json
+
 # Temporary files
 tmp/
 temp/

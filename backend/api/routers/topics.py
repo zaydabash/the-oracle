@@ -3,6 +3,8 @@
 
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
+from datetime import datetime
+from typing import Dict
 
 from ...core.logging import get_logger
 from ...db.session import get_db
@@ -31,7 +33,7 @@ async def list_topics(
         return topics
     except Exception as e:
         logger.error(f"Error listing topics: {e}")
-        raise HTTPException(status_code=500, detail="Internal server error")
+        raise HTTPException(status_code=500, detail="Internal server error") from e
 
 
 @router.get("/leaderboard", response_model=list[TopicLeaderboardItem])
@@ -78,7 +80,7 @@ async def get_leaderboard(
 
     except Exception as e:
         logger.error(f"Error getting leaderboard: {e}")
-        raise HTTPException(status_code=500, detail="Internal server error")
+        raise HTTPException(status_code=500, detail="Internal server error") from e
 
 
 @router.get("/{topic_id}", response_model=TopicDetail)
@@ -132,7 +134,7 @@ async def get_topic_detail(
         raise
     except Exception as e:
         logger.error(f"Error getting topic detail for {topic_id}: {e}")
-        raise HTTPException(status_code=500, detail="Internal server error")
+        raise HTTPException(status_code=500, detail="Internal server error") from e
 
 
 @router.get("/{topic_id}/narrative")
@@ -164,7 +166,7 @@ async def get_topic_narrative(
         raise
     except Exception as e:
         logger.error(f"Error generating narrative for {topic_id}: {e}")
-        raise HTTPException(status_code=500, detail="Internal server error")
+        raise HTTPException(status_code=500, detail="Internal server error") from e
 
 
 @router.get("/{topic_id}/forecasts")
@@ -194,7 +196,7 @@ async def get_topic_forecasts(
         raise
     except Exception as e:
         logger.error(f"Error getting forecasts for {topic_id}: {e}")
-        raise HTTPException(status_code=500, detail="Internal server error")
+        raise HTTPException(status_code=500, detail="Internal server error") from e
 
 
 def _get_sparkline_data(db: Session, topic_id: str, days: int = 30) -> list[float]:

@@ -6,8 +6,9 @@ from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-from ..app import app
-from ..db.base import Base
+from backend.app import app
+from backend.db.base import Base
+from backend.db.session import get_db
 
 
 @pytest.fixture(scope="session")

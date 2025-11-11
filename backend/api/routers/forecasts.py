@@ -1,9 +1,10 @@
 """Forecasts router for The Oracle."""
 
 
+from datetime import datetime
+
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
-from datetime import datetime
 
 from ...core.logging import get_logger
 from ...db.session import get_db

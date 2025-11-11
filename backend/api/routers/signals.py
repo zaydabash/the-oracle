@@ -75,7 +75,7 @@ async def list_signal_events(
 
     except Exception as e:
         logger.error(f"Error listing signal events: {e}")
-        raise HTTPException(status_code=500, detail="Internal server error")
+        raise HTTPException(status_code=500, detail="Internal server error") from e
 
 
 @router.get("/{event_id}", response_model=SignalEventResponse)
@@ -96,7 +96,7 @@ async def get_signal_event(
         raise
     except Exception as e:
         logger.error(f"Error getting signal event {event_id}: {e}")
-        raise HTTPException(status_code=500, detail="Internal server error")
+        raise HTTPException(status_code=500, detail="Internal server error") from e
 
 
 @router.get("/sources/stats")
@@ -147,7 +147,7 @@ async def get_source_statistics(
 
     except Exception as e:
         logger.error(f"Error getting source statistics: {e}")
-        raise HTTPException(status_code=500, detail="Internal server error")
+        raise HTTPException(status_code=500, detail="Internal server error") from e
 
 
 @router.get("/recent/activity")
@@ -207,7 +207,7 @@ async def get_recent_activity(
 
     except Exception as e:
         logger.error(f"Error getting recent activity: {e}")
-        raise HTTPException(status_code=500, detail="Internal server error")
+        raise HTTPException(status_code=500, detail="Internal server error") from e
 
 
 @router.get("/search")
@@ -243,4 +243,4 @@ async def search_signal_events(
 
     except Exception as e:
         logger.error(f"Error searching signal events: {e}")
-        raise HTTPException(status_code=500, detail="Internal server error")
+        raise HTTPException(status_code=500, detail="Internal server error") from e

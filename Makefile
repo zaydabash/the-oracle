@@ -31,13 +31,13 @@ rebuild: ## Run full pipeline: etl -> features -> forecast
 	docker-compose exec backend python -c "from ingestion.etl_runner import main; from features.build_feature_matrix import main as build_features; from forecasting.baseline import main as forecast; main(); build_features(); forecast()"
 
 test: ## Run all tests
-	python3 -m pytest backend/tests/ -v
+	PYTHONPATH=. python3 -m pytest backend/tests/ -v
 
 test-coverage: ## Run tests with coverage report (target: 95%+)
-	python3 -m pytest backend/tests/ --cov=backend --cov-report=html --cov-report=term-missing --cov-report=term
+	PYTHONPATH=. python3 -m pytest backend/tests/ --cov=backend --cov-report=html --cov-report=term-missing --cov-report=term
 
 test-security: ## Run security tests
-	python3 -m pytest backend/tests/test_security.py -v
+	PYTHONPATH=. python3 -m pytest backend/tests/test_security.py -v
 
 lint: ## Run linting checks (ruff, flake8, pylint)
 	python3 -m ruff check backend/

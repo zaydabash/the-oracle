@@ -213,8 +213,9 @@ class TestProphetForecaster:
         forecaster = ProphetForecaster()
 
         # Mock features with increasing velocity
-        from ..models.features import TopicFeatures
         from datetime import date
+
+        from ..models.features import TopicFeatures
 
         features = [
             TopicFeatures(velocity=1.0, date=date(2024, 1, 1)),
@@ -230,8 +231,9 @@ class TestProphetForecaster:
         """Test z-spike calculation."""
         forecaster = ProphetForecaster()
 
-        from ..models.features import TopicFeatures
         from datetime import date
+
+        from ..models.features import TopicFeatures
 
         # Create features with a spike at the end
         features = [

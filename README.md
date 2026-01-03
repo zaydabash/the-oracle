@@ -34,8 +34,6 @@ cd the-oracle
 cp .env.example .env
 make up && make seed
 
-# Visit dashboard at http://localhost:5173
-# API docs at http://localhost:8000/docs
 ```
 
 ### Demo Script
@@ -375,11 +373,5 @@ MIT License - see [LICENSE](LICENSE) for details.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## Support
-
-For questions or issues:
-- Create an issue in the GitHub repository
-- Check the [documentation](docs/)
-- Review the [API documentation](http://localhost:8000/docs)
 
 **Built for the future of quantitative intelligence**
